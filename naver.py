@@ -5,7 +5,7 @@ import re
 
 pyte.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract'
 
-a = pyte.image_to_string('캡처.PNG', lang='jpn_vert', config='--psm 5 --oem 1')
+a = pyte.image_to_string('.PNG', lang='jpn_vert', config='--psm 5 --oem 1')
 a = re.sub('[-=+,#/\?:^$.@*\"※~&%ㆍ!』\\‘|\(\)\[\]\<\>`\'…》 ]', '', a)
 
 
